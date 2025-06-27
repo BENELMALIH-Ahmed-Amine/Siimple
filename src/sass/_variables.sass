@@ -1,0 +1,23 @@
+// variables
+$myorange: #fd680e
+
+// fonctions
+@mixin center($jc, $ai, $fd)
+    display: flex
+    justify-content: $jc
+    align-items: $ai
+    flex-direction: $fd
+
+@mixin anchor($c)
+    text-decoration: none
+    font-size: 18px
+    color: $c
+    padding: 10px 0
+    &:hover, &:active
+        color: $myorange
+
+@mixin headsection()
+    @include center(center, center, column)
+    width: 100%
+    
+    

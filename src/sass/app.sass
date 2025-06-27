@@ -1,0 +1,21 @@
+*
+    margin: 0%
+    padding: 0%
+@import ../../node_modules/bootstrap/scss/functions
+@import ../../node_modules/bootstrap/scss/variables
+
+$alpha: #2ec3d6
+$beta: #761451
+
+$colors: ("alpha": $alpha , "beta": $beta)
+
+$theme-colors: map-merge($colors , $theme-colors)
+
+@import ../../node_modules/bootstrap/scss/bootstrap.scss
+@import ../../node_modules/bootstrap-icons/font/bootstrap-icons.css
+
+
+@import ./_variables
+@import ./modules/header/_header
+@import ./modules/main/_f-articale
+@import ./modules/main/_s-articale

@@ -1,0 +1,37 @@
+article
+    .why
+        width: 100%
+        @include center(space-between, center, row)
+        gap: 20px
+
+        a
+            width: 32%
+            text-decoration: none
+            position: relative
+
+            .card
+                width: 100% !important
+
+                .card-body
+                    width: 100% !important
+                    height: 100%
+                    @include center(center, center, column)
+
+                    h4
+                        font-weight: bold
+                        padding-top: 50px
+            
+            .icon
+
+                i
+                    font-size: 34px !important
+                    color: $myorange
+                    position: absolute
+                    top: 40%
+                    right: 50%
+
+                    @include center(center, center, cow)
+                    width: 70px
+                    height: 70px
+                    background-color: #475664
+                    border-radius: 50px
